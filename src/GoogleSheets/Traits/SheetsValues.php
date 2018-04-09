@@ -169,6 +169,18 @@ trait SheetsValues
     }
 
     /**
+     * @param string $dateTimeRenderOption
+     *
+     * @return $this
+     */
+    public function valueRenderOption(string $valueRenderOption)
+    {
+        $this->valueRenderOption = $valueRenderOption;
+
+        return $this;
+    }
+
+    /**
      * @return array
      */
     private function query(): array
